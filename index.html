@@ -34,10 +34,10 @@
               zoom: 11
           });
 
-         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-           attribution: 'Map data © OpenStreetMap contributors, CC-BY-SA, Imagery © Mapbox',
-           id: 'mapbox.dark',
-           accessToken: 'pk.eyJ1IjoiY3VyZW1hbmdvIiwiYSI6ImNpcTQ4cGFwbDAxbmVmd25vZGNiOTVzeGEifQ.GWZByYkIft6eMRha69C8nw'
+         L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+           attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
+           maxZoom: 11,
+           minZoom: 4
          }).addTo(map);
         
         // Read in the point layer as geojson;
